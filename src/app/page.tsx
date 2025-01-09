@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <MainLayout>
         <MainContent />
-        <ProductSection title="پرفروش ترین ها" />
+        <ProductSection title="پرفروش ترین ها" link="" />
         <div className="mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0">
           <a
             className="h-full group flex justify-center overflow-hidden"
@@ -23,7 +23,7 @@ export default function Home() {
             />
           </a>
         </div>
-        <ProductSection title="محصولات جدید" />
+        <ProductSection title="محصولات جدید" link=""/>
         <Services />
       </MainLayout>
     </>
