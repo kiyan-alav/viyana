@@ -6,15 +6,15 @@ function Footer() {
         <div className="px-8 py-16 grid grid-cols-4 gap-4 justify-items-center">
             <div className="col-span-2 lg:col-span-1">
                 <div className="flex flex-col">
-                    <h4 className="mb-5 text-sm font-semibold text-[#212121] md:text-base">شبکه های اجتماعی</h4>
+                    <h4 className="mb-5 text-sm font-semibold text-palette-50 md:text-base">شبکه های اجتماعی</h4>
                     <div className="flex flex-col gap-2">
                         <a href="" target="_blank"
-                           className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-[#5a5a5a] text-xs lg:text-sm">
+                           className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-palette-100 text-xs lg:text-sm">
                             <Icon icon="mdi:instagram" width="24" height="24"/>
                             اینستاگرام
                         </a>
                         <a href="" target="_blank"
-                           className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-[#5a5a5a] text-xs lg:text-sm">
+                           className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-palette-100 text-xs lg:text-sm">
                             <Icon icon="ic:baseline-telegram" width="24" height="24"/>
                             تلگرام
                         </a>
@@ -23,10 +23,10 @@ function Footer() {
             </div>
             <div className="col-span-2 lg:col-span-1">
                 <div className="flex flex-col">
-                    <h4 className="mb-5 text-sm font-semibold text-[#212121] md:text-base">تماس با ما</h4>
+                    <h4 className="mb-5 text-sm font-semibold text-palette-50 md:text-base">تماس با ما</h4>
                     <div className="flex flex-col gap-2">
                         <Link href=""
-                              className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-[#5a5a5a] text-xs lg:text-sm">
+                              className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-palette-100 text-xs lg:text-sm">
                             <Icon icon="material-symbols:call" width="24" height="24"/>
                             راه های ارتباطی با ویانا
                         </Link>
@@ -35,10 +35,10 @@ function Footer() {
             </div>
             <div className="col-span-2 lg:col-span-1">
                 <div className="flex flex-col">
-                    <h4 className="mb-5 text-sm font-semibold text-[#212121] md:text-base">درباره ما</h4>
+                    <h4 className="mb-5 text-sm font-semibold text-palette-50 md:text-base">درباره ما</h4>
                     <div className="flex flex-col gap-2">
                         <Link href=""
-                              className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-[#5a5a5a] text-xs lg:text-sm">
+                              className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-palette-100 text-xs lg:text-sm">
                             <Icon icon="ix:about" width="24" height="24"/>
                             درباره ویانا
                         </Link>
@@ -46,28 +46,34 @@ function Footer() {
                 </div>
             </div>
             <div className="col-span-2 lg:col-span-1">
-              <div className="flex flex-col">
-                <h4 className="mb-5 text-sm font-semibold text-[#212121] md:text-base">دسته بندی های برتر</h4>
-                <div className="flex flex-col gap-2">
-                  <Link href=""
-                        className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-[#5a5a5a] text-xs lg:text-sm">
-                    دسته بندی 1
-                  </Link>
-                  <Link href=""
-                        className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-[#5a5a5a] text-xs lg:text-sm">
-                    دسته بندی 2
-                  </Link>
-                  <Link href=""
-                        className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-[#5a5a5a] text-xs lg:text-sm">
-                    دسته بندی 3
-                  </Link>
+                <div className="flex flex-col">
+                    <h4 className="mb-5 text-sm font-semibold text-palette-50 md:text-base">دسته بندی های برتر</h4>
+                    <div className="flex flex-col gap-2">
+                        <Link href=""
+                              className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-palette-100 text-xs lg:text-sm">
+                            دسته بندی 1
+                        </Link>
+                        <Link href=""
+                              className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-palette-100 text-xs lg:text-sm">
+                            دسته بندی 2
+                        </Link>
+                        <Link href=""
+                              className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-palette-100 text-xs lg:text-sm">
+                            دسته بندی 3
+                        </Link>
+                    </div>
                 </div>
-              </div>
             </div>
         </div>
-        <p className="p-4 text-[#5a5a5a] text-xs lg:text-sm leading-6 border-t-4 border-t-[#292929] font-bold">
-          حق نشر © 2025 <a href="https://redq.io/" target="_blank" className="text-[#292929]">REDQ</a>  کلیه حقوق محفوظ است
-        </p>
+        <div className="p-4 border-t-4 border-t-palette-200 flex flex-col items-center gap-2">
+            <p className="text-palette-100 text-xs lg:text-sm leading-6 font-bold">
+                حق نشر © 2025 <a href="https://redq.io/" target="_blank" className="text-palette-200">REDQ</a> کلیه حقوق
+                محفوظ است
+            </p>
+            <p className="text-palette-100 text-xs lg:text-sm leading-6 font-bold">
+                توسعه داده شده توسط <strong>کیان علوی</strong>
+            </p>
+        </div>
     </div>
 }
 

@@ -11,8 +11,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        palette: {
+          50: "#212121",
+          100: "#5a5a5a",
+          200: "#292929",
+          300: "#F9F9F9",
+          400: "#E9ECEF",
+        }
       },
       fontFamily: {
         IranYekan: ["IranYekan", "sans-serif"],
