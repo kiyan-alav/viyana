@@ -1,5 +1,5 @@
 function path(main: string, sub?: string) {
-    return `${main}${sub}`
+    return sub ? `${main}/${sub}` : main;
 }
 
 export const MAIN_PATH = {
