@@ -1,5 +1,6 @@
 import {Icon} from "@iconify/react";
 import Link from "next/link";
+import {MAIN_PATH} from "@/routes/path";
 
 function Footer() {
     return <div className="mt-28 shadow-2xl border-t-1.5">
@@ -25,7 +26,7 @@ function Footer() {
                 <div className="flex flex-col">
                     <h4 className="mb-5 text-sm font-semibold text-palette-50 md:text-base">تماس با ما</h4>
                     <div className="flex flex-col gap-2">
-                        <Link href=""
+                        <Link href={MAIN_PATH.contactUs}
                               className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-palette-100 text-xs lg:text-sm">
                             <Icon icon="material-symbols:call" width="24" height="24"/>
                             راه های ارتباطی با ویانا
@@ -37,7 +38,7 @@ function Footer() {
                 <div className="flex flex-col">
                     <h4 className="mb-5 text-sm font-semibold text-palette-50 md:text-base">درباره ما</h4>
                     <div className="flex flex-col gap-2">
-                        <Link href=""
+                        <Link href={MAIN_PATH.aboutUs}
                               className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-palette-100 text-xs lg:text-sm">
                             <Icon icon="ix:about" width="24" height="24"/>
                             درباره ویانا
@@ -49,15 +50,15 @@ function Footer() {
                 <div className="flex flex-col">
                     <h4 className="mb-5 text-sm font-semibold text-palette-50 md:text-base">دسته بندی های برتر</h4>
                     <div className="flex flex-col gap-2">
-                        <Link href=""
+                        <Link href={MAIN_PATH.category("1")}
                               className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-palette-100 text-xs lg:text-sm">
                             دسته بندی 1
                         </Link>
-                        <Link href=""
+                        <Link href={MAIN_PATH.category("1")}
                               className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-palette-100 text-xs lg:text-sm">
                             دسته بندی 2
                         </Link>
-                        <Link href=""
+                        <Link href={MAIN_PATH.category("1")}
                               className="flex items-center gap-2 transition-colors duration-200 hover:text-black text-palette-100 text-xs lg:text-sm">
                             دسته بندی 3
                         </Link>

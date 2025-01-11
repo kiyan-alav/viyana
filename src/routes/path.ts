@@ -4,11 +4,14 @@ function path(main: string, sub?: string) {
 
 export const MAIN_PATH = {
     home: path("/"),
-    product: path("/products"),
+    products: path("/products"),
     productDetail: (id: string) => path("/products", `${id}`),
     contactUs: path("/contact-us"),
+    aboutUs: path("/about-us"),
     blogs: path("/blogs"),
     login: path("/login"),
+    shoppingCart: path("/shopoing-cart"),
+    category: (id: string) => path("/category", `${id}`),
 }
 
 export const USER_PANEL_PATH = {

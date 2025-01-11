@@ -49,7 +49,7 @@ function Header() {
                             خانه
                         </Link>
                         <Link
-                            href={MAIN_PATH.product}
+                            href={MAIN_PATH.products}
                             className="transition-all hover:border-b-4 hover:border-b-black hover:font-medium"
                         >
                             محصولات
@@ -59,6 +59,12 @@ function Header() {
                             className="transition-all hover:border-b-4 hover:border-b-black hover:font-medium"
                         >
                             تماس با ما
+                        </Link>
+                        <Link
+                            href={MAIN_PATH.aboutUs}
+                            className="transition-all hover:border-b-4 hover:border-b-black hover:font-medium"
+                        >
+                            درباره ما
                         </Link>
                         <Link
                             href={MAIN_PATH.blogs}
@@ -122,7 +128,7 @@ function Header() {
                                         خانه
                                     </Link>
                                     <Link
-                                        href={MAIN_PATH.product}
+                                        href={MAIN_PATH.products}
                                         className="transition-all hover:pr-4 hover:font-medium"
                                     >
                                         محصولات
@@ -132,6 +138,12 @@ function Header() {
                                         className="transition-all hover:pr-4 hover:font-medium"
                                     >
                                         تماس با ما
+                                    </Link>
+                                    <Link
+                                        href={MAIN_PATH.aboutUs}
+                                        className="transition-all hover:pr-4 hover:font-medium"
+                                    >
+                                        درباره ما
                                     </Link>
                                     <Link
                                         href={MAIN_PATH.blogs}
@@ -145,7 +157,6 @@ function Header() {
                     )}
                 </DrawerContent>
             </Drawer>
-            {/* HERE */}
             <Drawer
                 isOpen={isOpenShoppingCard}
                 size="lg"
@@ -183,7 +194,7 @@ function Header() {
                             </DrawerBody>
                             <DrawerFooter className="flex justify-center py-12">
                                 <Link
-                                    href=""
+                                    href={MAIN_PATH.shoppingCart}
                                     className="bg-slate-900 flex-1 text-white text-center py-4 rounded-lg"
                                 >
                                     مشاهده سبد خرید
