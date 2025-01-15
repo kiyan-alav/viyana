@@ -3,6 +3,7 @@ import MainLayout from "@/components/layouts/MainLayout";
 import {Tab, Tabs} from "@nextui-org/tabs";
 import LoginWithEmail from "@/components/templates/LoginWithEmail";
 import LoginWithPhone from "@/components/templates/LoginWithPhone";
+import Register from "@/components/templates/Register";
 
 function Login() {
     return (
@@ -14,6 +15,9 @@ function Login() {
                     </Tab>
                     <Tab key="phone" title="ورود با رمز یکبار مصرف">
                         <LoginWithPhone />
+                    </Tab>
+                    <Tab key="register" title="ثبت نام">
+                        <Register />
                     </Tab>
                 </Tabs>
             </div>
