@@ -9,7 +9,7 @@ export const MAIN_PATH = {
     contactUs: path("/contact-us"),
     aboutUs: path("/about-us"),
     blogs: path("/blogs"),
-    login: path("/register"),
+    register: path("/register"),
     shoppingCart: path("/shopoing-cart"),
     category: (id: string) => path("/category", `${id}`),
 }

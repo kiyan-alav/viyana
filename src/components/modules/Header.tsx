@@ -84,7 +84,7 @@ function Header() {
                 </div>
                 <div className="flex items-center gap-4">
                     {!false ? (
-                        <Link href={MAIN_PATH.login}>ورود</Link>
+                        <Link href={MAIN_PATH.register}>ورود / ثبت نام</Link>
                     ) : (
                         <Link href={USER_PANEL_PATH.dashboard}>
                             <User
