@@ -95,3 +95,13 @@
     @apply font-IranYekan;
   }
 }
+
+@layer utilities{
+  .rtlClass{
+    direction: rtl;
+  }
+
+  .ltrClass{
+    direction: ltr;
+  }
+}

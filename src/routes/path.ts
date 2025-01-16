@@ -15,7 +15,7 @@ export const MAIN_PATH = {
 }
 
 export const USER_PANEL_PATH = {
-    dashboard: path("/user", "/dashboard")
+    dashboard: path("/user", "dashboard")
 }
 
 export const ADMIN_PANEL_PATH = {}

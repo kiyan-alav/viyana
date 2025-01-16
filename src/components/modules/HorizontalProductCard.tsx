@@ -5,7 +5,7 @@ import {MAIN_PATH} from "@/routes/path";
 
 function HorizontalProductCard() {
     return (
-        <Link href={`${MAIN_PATH.productDetail("1")}`}>
+        <Link href={`${MAIN_PATH.productDetail("1")}`} className="block">
             <div className="flex justify-between">
                 <div className="w-20 h-20">
                     <Image

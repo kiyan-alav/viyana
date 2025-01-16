@@ -86,7 +86,7 @@ function Header() {
                     {!false ? (
                         <Link href={MAIN_PATH.register}>ورود / ثبت نام</Link>
                     ) : (
-                        <Link href={USER_PANEL_PATH.dashboard}>
+                        <Link href={USER_PANEL_PATH.dashboard} className="block">
                             <User
                                 avatarProps={{
                                     src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
@@ -97,14 +97,14 @@ function Header() {
                     )}
                     <button onClick={onOpenShoppingCard}>
                         <Badge color="primary" content="5">
-              <span>
-                <Icon
-                    icon="icon-park-outline:shopping"
-                    width="36"
-                    height="36"
-                    style={{color: "#000"}}
-                />
-              </span>
+                              <span>
+                                <Icon
+                                    icon="icon-park-outline:shopping"
+                                    width="36"
+                                    height="36"
+                                    style={{color: "#000"}}
+                                />
+                              </span>
                         </Badge>
                     </button>
                 </div>

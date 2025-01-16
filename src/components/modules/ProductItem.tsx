@@ -8,7 +8,7 @@ export default function ProductItem() {
     <>
       <Link href={MAIN_PATH.productDetail("1")} className="block">
         <div
-            className="group box-border overflow-hidden flex rounded-md cursor-pointer ltr:pr-0 rtl:pl-0 pb-2 lg:pb-3 flex-col items-start transition duration-200 ease-in-out transform hover:-translate-y-1 md:hover:-translate-y-1.5 hover:shadow-md bg-white">
+            className="group box-border overflow-hidden flex rounded-md cursor-pointer ltr:pr-0 rtl:pl-0 pb-2 lg:pb-3 flex-col items-start transition duration-200 ease-in-out transform hover:-translate-y-1 md:hover:-translate-y-1.5 hover:shadow-md bg-white border">
           <div className="w-full">
             <Image
                 src={TestProduct}
