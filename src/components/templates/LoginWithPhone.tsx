@@ -1,6 +1,6 @@
-import {Input} from "@nextui-org/input";
-import {Button} from "@nextui-org/button";
-import {InputOtp} from "@nextui-org/input-otp";
+import {Input} from "@heroui/input";
+import {Button} from "@heroui/button";
+import {InputOtp} from "@heroui/input-otp";
 
 function LoginWithPhone() {
     return (

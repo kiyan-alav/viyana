@@ -1,6 +1,6 @@
 "use client"
 import MainLayout from "@/components/layouts/MainLayout";
-import {Tab, Tabs} from "@nextui-org/tabs";
+import {Tab, Tabs} from "@heroui/tabs";
 import LoginWithEmail from "@/components/templates/LoginWithEmail";
 import LoginWithPhone from "@/components/templates/LoginWithPhone";
 import Register from "@/components/templates/Register";

@@ -3,15 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import {Icon} from "@iconify/react";
-import {Badge} from "@nextui-org/badge";
+import {Badge} from "@heroui/badge";
 import {
     Drawer,
     DrawerBody,
     DrawerContent,
     DrawerFooter,
     DrawerHeader,
-} from "@nextui-org/drawer";
-import {useDisclosure, User} from "@nextui-org/react";
+} from "@heroui/drawer";
+import {useDisclosure, User} from "@heroui/react";
 import HorizontalProductCard from "./HorizontalProductCard";
 import {MAIN_PATH, USER_PANEL_PATH} from "@/routes/path";
 

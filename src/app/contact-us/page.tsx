@@ -2,7 +2,7 @@ import React from 'react';
 import MainLayout from "@/components/layouts/MainLayout";
 import {Icon} from "@iconify/react";
 
-function ContactUs(props) {
+function ContactUs() {
     return (
         <MainLayout>
             <div className="grid grid-cols-2">

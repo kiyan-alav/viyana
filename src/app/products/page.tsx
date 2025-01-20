@@ -1,7 +1,7 @@
 import MainLayout from "@/components/layouts/MainLayout";
 import ProductsFilter from "@/components/templates/ProductsFilter";
 import ProductItem from "@/components/modules/ProductItem";
-import {Pagination} from "@nextui-org/pagination";
+import {Pagination} from "@heroui/pagination";
 
 function Products() {
 

@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import {Select, SelectItem, Slider, Switch} from "@nextui-org/react";
+import {Select, SelectItem, Slider, Switch} from "@heroui/react";
 
 export const categories = [
     {key: "1", label: "دسته بندی 1"},
