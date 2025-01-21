@@ -3,7 +3,7 @@ import ProductsFilter from "@/components/templates/ProductsFilter";
 import ProductItem from "@/components/modules/ProductItem";
 import {Pagination} from "@heroui/pagination";
 
-function Products() {
+function CategoryProductDetail(props) {
     return (
         <MainLayout>
             <div className="grid grid-cols-4 gap-4">
@@ -32,4 +32,4 @@ function Products() {
     );
 }
 
-export default Products;
+export default CategoryProductDetail;

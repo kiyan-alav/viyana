@@ -66,12 +66,6 @@ function Header() {
                         >
                             درباره ما
                         </Link>
-                        <Link
-                            href={MAIN_PATH.blogs}
-                            className="transition-all hover:border-b-4 hover:border-b-black hover:font-medium"
-                        >
-                            بلاگ
-                        </Link>
                     </div>
                     <button onClick={onOpenSidebar} className="block md:hidden">
                         <Icon
@@ -144,12 +138,6 @@ function Header() {
                                         className="transition-all hover:pr-4 hover:font-medium"
                                     >
                                         درباره ما
-                                    </Link>
-                                    <Link
-                                        href={MAIN_PATH.blogs}
-                                        className="transition-all hover:pr-4 hover:font-medium"
-                                    >
-                                        بلاگ
                                     </Link>
                                 </div>
                             </DrawerBody>

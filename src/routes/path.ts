@@ -8,10 +8,9 @@ export const MAIN_PATH = {
     productDetail: (id: string) => path("/products", `${id}`),
     contactUs: path("/contact-us"),
     aboutUs: path("/about-us"),
-    blogs: path("/blogs"),
     register: path("/register"),
     shoppingCart: path("/shopoing-cart"),
-    category: (id: string) => path("/category", `${id}`),
+    category: (id: string) => path("/products/category", `${id}`),
 }
 
 export const USER_PANEL_PATH = {

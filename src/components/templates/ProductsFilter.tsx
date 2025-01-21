@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 import {Select, SelectItem, Slider, Switch} from "@heroui/react";
+import {usePathname} from "next/navigation";
 
 export const categories = [
     {key: "1", label: "دسته بندی 1"},
@@ -10,15 +11,19 @@ export const categories = [
 ];
 
 function ProductsFilter() {
+    const pathname = usePathname()
+
     return (
         <div className="col-span-4 md:col-span-1">
             <div className="flex flex-col gap-16">
                 <div className="">
-                    <Select className="max-w-xs" label="دسته بندی...">
-                        {categories.map((category) => (
-                            <SelectItem key={category.key}>{category.label}</SelectItem>
-                        ))}
-                    </Select>
+                    {
+                        pathname.startsWith("/products/category") ? <p className="md:text-sm text-base font-bold">دسته بندی فلان</p> : <Select className="max-w-xs" label="دسته بندی...">
+                            {categories.map((category) => (
+                                <SelectItem key={category.key}>{category.label}</SelectItem>
+                            ))}
+                        </Select>
+                    }
                 </div>
                 <div className="ltrClass">
                     <Slider

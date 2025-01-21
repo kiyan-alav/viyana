@@ -18,10 +18,10 @@ function CategoryItem() {
                             className="w-full h-full overflow-hidden"
                         />
                     </div>
-                    <h2 className="text-sm font-bold">نام دسته بندی</h2>
+                    <h2 className="md:text-sm text-base font-bold">نام دسته بندی</h2>
                 </div>
                 <div className="flex items-center gap-2">
-                    <span className="bg-[palette-400 rounded-sm w-4 h-4 flex items-center justify-center text-sm">
+                    <span className="bg-[palette-400 rounded-sm w-4 h-4 flex items-center justify-center md:text-sm text-base">
                       5
                     </span>
                     <span>

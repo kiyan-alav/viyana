@@ -2,7 +2,7 @@
 import MainLayout from "@/components/layouts/MainLayout";
 import {Accordion, AccordionItem} from "@heroui/accordion";
 
-function Page() {
+function AboutUs() {
     return (
         <MainLayout>
             <h3 className="text-2xl md:text-3xl font-bold text-palette-50 pb-7 md:pb-10 lg:pb-6 -mt-1">ویانا؟</h3>
@@ -39,4 +39,4 @@ function Page() {
     );
 }
 
-export default Page;
+export default AboutUs;

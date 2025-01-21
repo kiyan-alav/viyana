@@ -5,7 +5,7 @@ import LoginWithEmail from "@/components/templates/LoginWithEmail";
 import LoginWithPhone from "@/components/templates/LoginWithPhone";
 import Register from "@/components/templates/Register";
 
-function Login() {
+function Register() {
     return (
         <MainLayout>
             <div className="flex w-full flex-col">
@@ -25,4 +25,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default Register;
