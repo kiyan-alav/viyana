@@ -1,9 +1,15 @@
+"use client"
 import MainLayout from "@/components/layouts/MainLayout";
 import {Icon} from "@iconify/react";
-import ContactUsMap from "@/components/modules/ContactUsMap";
+// import ContactUsMap from "@/components/modules/ContactUsMap";
 import {Form} from "@heroui/form";
 import {Input, Textarea} from "@heroui/input";
 import {Button} from "@heroui/button";
+import dynamic from 'next/dynamic'
+
+const ContactUsMap = dynamic(() => import("@/components/modules/ContactUsMap"), {
+    ssr: false,
+})
 
 function ContactUs() {
     return (
@@ -76,7 +82,9 @@ function ContactUs() {
                             type="text"
                             className="col-span-2 font-semibold"
                         />
-                        <Textarea className="col-span-2 font-semibold" labelPlacement="outside" label="پیام" placeholder="پیام خود را بنویسید" />
+                        <Textarea className="col-span-2 font-semibold h-full" classNames={{
+                            inputWrapper: "h-max"
+                        }} labelPlacement="outside" label="پیام" placeholder="پیام خود را بنویسید"/>
                         <Button type="submit" variant="solid" className="bg-palette-50 text-white w-1/4 py-4 px-8 font-bold">
                             ارسال پیام
                         </Button>

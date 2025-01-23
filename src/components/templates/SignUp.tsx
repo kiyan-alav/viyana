@@ -1,7 +1,7 @@
 import {Input} from "@heroui/input";
 import {Button} from "@heroui/button";
 
-function Register() {
+function SignUp() {
     return (
         <>
             <div className="max-w-2xl p-5 mx-auto flex flex-col gap-4">
@@ -83,4 +83,4 @@ function Register() {
     );
 }
 
-export default Register;
+export default SignUp;

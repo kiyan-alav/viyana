@@ -3,13 +3,13 @@ import MainLayout from "@/components/layouts/MainLayout";
 import {Tab, Tabs} from "@heroui/tabs";
 import LoginWithEmail from "@/components/templates/LoginWithEmail";
 import LoginWithPhone from "@/components/templates/LoginWithPhone";
-import Register from "@/components/templates/Register";
+import SignUp from "@/components/templates/SignUp";
 
 function Register() {
     return (
         <MainLayout>
             <div className="flex w-full flex-col">
-                <Tabs radius="full" color="primary" variant="light" defaultSelectedKey>
+                <Tabs radius="full" color="primary" variant="light" defaultSelectedKey="email">
                     <Tab key="email" title="ورود با ایمیل">
                         <LoginWithEmail />
                     </Tab>
@@ -17,7 +17,7 @@ function Register() {
                         <LoginWithPhone />
                     </Tab>
                     <Tab key="register" title="ثبت نام">
-                        <Register />
+                        <SignUp />
                     </Tab>
                 </Tabs>
             </div>
