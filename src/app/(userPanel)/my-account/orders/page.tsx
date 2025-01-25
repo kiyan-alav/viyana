@@ -1,7 +1,5 @@
 function Orders() {
-    return (
-        <div>orders</div>
-    );
+  return <div>orders</div>;
 }
 
 export default Orders;

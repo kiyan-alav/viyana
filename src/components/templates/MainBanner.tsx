@@ -3,9 +3,9 @@ import CategoryItem from "./CategoryItem";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import Image from "next/image";
-import TestSlider1 from "@/public/images/banner-2.jpg"
-import TestSlider2 from "@/public/images/banner-3.jpg"
-import TestSlider3 from "@/public/images/banner-8.jpg"
+import TestSlider1 from "@/public/images/banner-2.jpg";
+import TestSlider2 from "@/public/images/banner-3.jpg";
+import TestSlider3 from "@/public/images/banner-8.jpg";
 
 function MainBanner() {
   return (

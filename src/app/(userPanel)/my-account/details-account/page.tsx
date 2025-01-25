@@ -1,7 +1,5 @@
 function DetailsAccount() {
-    return (
-        <div>details account</div>
-    );
+  return <div>details account</div>;
 }
 
 export default DetailsAccount;

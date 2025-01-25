@@ -4,7 +4,7 @@ import ProductSection from "@/components/templates/ProductSection";
 import Image from "next/image";
 import TestBanner from "@/public/images/banner-1.jpg";
 import Services from "@/components/templates/Services";
-import {MAIN_PATH} from "@/routes/path";
+import { MAIN_PATH } from "@/routes/path";
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
             />
           </a>
         </div>
-        <ProductSection title="محصولات جدید" link={MAIN_PATH.products}/>
+        <ProductSection title="محصولات جدید" link={MAIN_PATH.products} />
         <Services />
       </MainLayout>
     </>

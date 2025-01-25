@@ -1,22 +1,22 @@
 function path(main: string, sub?: string) {
-    return sub ? `${main}/${sub}` : main;
+  return sub ? `${main}/${sub}` : main;
 }
 
 export const MAIN_PATH = {
-    home: path("/"),
-    products: path("/products"),
-    productDetail: (id: string) => path("/products", `${id}`),
-    contactUs: path("/contact-us"),
-    aboutUs: path("/about-us"),
-    register: path("/register"),
-    shoppingCart: path("/shopping-cart"),
-    category: (id: string) => path("/products/category", `${id}`),
-}
+  home: path("/"),
+  products: path("/products"),
+  productDetail: (id: string) => path("/products", `${id}`),
+  contactUs: path("/contact-us"),
+  aboutUs: path("/about-us"),
+  register: path("/register"),
+  shoppingCart: path("/shopping-cart"),
+  category: (id: string) => path("/products/category", `${id}`),
+};
 
 export const USER_PANEL_PATH = {
-    orders: path("/my-account", "orders"),
-    detailsAccount: path("/my-account", "details-account"),
-    changePassword: path("/my-account", "change-password"),
-}
+  orders: path("/my-account", "orders"),
+  detailsAccount: path("/my-account", "details-account"),
+  changePassword: path("/my-account", "change-password"),
+};
 
-export const ADMIN_PANEL_PATH = {}
+export const ADMIN_PANEL_PATH = {};

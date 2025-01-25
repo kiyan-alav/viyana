@@ -5,8 +5,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import NextProvider from "./NextProvider";
 import ReduxProvider from "./../redux/ReduxProvider";
-import 'react-toastify/dist/ReactToastify.css'
-import {ToastContainer} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
   title: "اکسسوری ویانا",
@@ -24,7 +24,7 @@ export default function RootLayout({
         <ReduxProvider>
           <NextProvider>
             {children}
-            <ToastContainer autoClose={5000}/>
+            <ToastContainer autoClose={5000} />
           </NextProvider>
         </ReduxProvider>
       </body>
