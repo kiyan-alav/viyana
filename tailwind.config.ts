@@ -19,6 +19,7 @@ export default {
           400: "#E9ECEF",
           500: "#FFD700",
           600: "#808080",
+          700: "#F1F1F1",
         }
       },
       fontFamily: {

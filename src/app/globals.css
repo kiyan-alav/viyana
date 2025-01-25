@@ -72,3 +72,9 @@
 html {
     scroll-behavior: smooth !important;
 }
+
+.profile-banner{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+    url('/images/testProfileBanner.jpg');
+    background-size: cover;
+}

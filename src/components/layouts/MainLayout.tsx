@@ -1,12 +1,12 @@
-import {ReactNode} from "react";
+import React, {ReactNode} from "react";
 import Header from "../modules/Header";
 import Footer from "../modules/Footer";
 
-interface MainLayoutProps {
-    children: ReactNode
-}
-
-function MainLayout({children}: MainLayoutProps) {
+export default function MainLayout({
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
+}>) {
     return (
         <div className="min-h-screen flex flex-col">
             <Header/>
@@ -15,5 +15,3 @@ function MainLayout({children}: MainLayoutProps) {
         </div>
     );
 };
-
-export default MainLayout;

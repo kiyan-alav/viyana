@@ -14,7 +14,9 @@ export const MAIN_PATH = {
 }
 
 export const USER_PANEL_PATH = {
-    dashboard: path("/user", "dashboard")
+    orders: path("/my-account", "orders"),
+    detailsAccount: path("/my-account", "details-account"),
+    changePassword: path("/my-account", "change-password"),
 }
 
 export const ADMIN_PANEL_PATH = {}
