@@ -1,7 +1,6 @@
 "use client"
 import MainLayout from "@/components/layouts/MainLayout";
 import {Icon} from "@iconify/react";
-// import ContactUsMap from "@/components/modules/ContactUsMap";
 import {Form} from "@heroui/form";
 import {Input, Textarea} from "@heroui/input";
 import {Button} from "@heroui/button";

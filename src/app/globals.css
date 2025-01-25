@@ -3,68 +3,72 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: Dana;
-    font-style: normal;
-    font-weight: 400;
-    src: url("/fonts/woff/Dana-Regular.woff") format("woff"),
-      url("/fonts/woff2/Dana-Regular.woff2") format("woff2");
-  }
+    @font-face {
+        font-family: Dana;
+        font-style: normal;
+        font-weight: 400;
+        src: url("/fonts/woff/Dana-Regular.woff") format("woff"),
+        url("/fonts/woff2/Dana-Regular.woff2") format("woff2");
+    }
 
-  @font-face {
-    font-family: Dana;
-    font-style: normal;
-    font-weight: 100;
-    src: url("/fonts/woff/Dana-Light.woff") format("woff"),
-    url("/fonts/woff2/Dana-Light.woff2") format("woff2");
-  }
+    @font-face {
+        font-family: Dana;
+        font-style: normal;
+        font-weight: 100;
+        src: url("/fonts/woff/Dana-Light.woff") format("woff"),
+        url("/fonts/woff2/Dana-Light.woff2") format("woff2");
+    }
 
-  @font-face {
-    font-family: Dana;
-    font-style: normal;
-    font-weight: 500;
-    src: url("/fonts/woff/Dana-Medium.woff") format("woff"),
-    url("/fonts/woff2/Dana-Medium.woff2") format("woff2");
-  }
+    @font-face {
+        font-family: Dana;
+        font-style: normal;
+        font-weight: 500;
+        src: url("/fonts/woff/Dana-Medium.woff") format("woff"),
+        url("/fonts/woff2/Dana-Medium.woff2") format("woff2");
+    }
 
-  @font-face {
-    font-family: Dana;
-    font-style: normal;
-    font-weight: 600;
-    src: url("/fonts/woff/Dana-DemiBold.woff") format("woff"),
-    url("/fonts/woff2/Dana-DemiBold.woff2") format("woff2");
-  }
+    @font-face {
+        font-family: Dana;
+        font-style: normal;
+        font-weight: 600;
+        src: url("/fonts/woff/Dana-DemiBold.woff") format("woff"),
+        url("/fonts/woff2/Dana-DemiBold.woff2") format("woff2");
+    }
 
-  @font-face {
-    font-family: Dana;
-    font-style: normal;
-    font-weight: 700;
-    src: url("/fonts/woff/Dana-Bold.woff") format("woff"),
-    url("/fonts/woff2/Dana-Bold.woff2") format("woff2");
-  }
+    @font-face {
+        font-family: Dana;
+        font-style: normal;
+        font-weight: 700;
+        src: url("/fonts/woff/Dana-Bold.woff") format("woff"),
+        url("/fonts/woff2/Dana-Bold.woff2") format("woff2");
+    }
 
-  @font-face {
-    font-family: Dana;
-    font-style: normal;
-    font-weight: 800;
-    src: url("/fonts/woff/Dana-ExtraBold.woff") format("woff"),
-    url("/fonts/woff2/Dana-ExtraBold.woff2") format("woff2");
-  }
+    @font-face {
+        font-family: Dana;
+        font-style: normal;
+        font-weight: 800;
+        src: url("/fonts/woff/Dana-ExtraBold.woff") format("woff"),
+        url("/fonts/woff2/Dana-ExtraBold.woff2") format("woff2");
+    }
 
-  body {
-    @apply font-Dana;
-    -moz-font-feature-settings: "ss02";
-    -webkit-font-feature-settings: "ss02";
-    font-feature-settings: "ss02";
-  }
+    body {
+        @apply font-Dana;
+        -moz-font-feature-settings: "ss02";
+        -webkit-font-feature-settings: "ss02";
+        font-feature-settings: "ss02";
+    }
 }
 
-@layer utilities{
-  .rtlClass{
-    direction: rtl;
-  }
+@layer utilities {
+    .rtlClass {
+        direction: rtl;
+    }
 
-  .ltrClass{
-    direction: ltr;
-  }
+    .ltrClass {
+        direction: ltr;
+    }
+}
+
+html {
+    scroll-behavior: smooth !important;
 }
