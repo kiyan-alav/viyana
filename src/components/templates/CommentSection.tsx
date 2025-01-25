@@ -4,7 +4,6 @@ import {Button} from "@heroui/button";
 import {Form} from "@heroui/form";
 import {Icon} from "@iconify/react";
 import React, {useState} from "react";
-import {User} from "@heroui/react";
 import Image from "next/image";
 import TestCategory from "@/public/images/shop-logo-8.jpg";
 

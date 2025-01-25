@@ -19,7 +19,7 @@ export default function UserLayout({
                 <Image
                     src={TestBannerImg}
                     alt="Banner"
-                    className="object-cover w-full h-full"
+                    className="object-cover w-full h-full block"
                 />
                 <div
                     className="absolute left-0 top-0 w-full h-full bg-gradient-to-r from-black/50 to-black/50 flex items-center justify-center">
@@ -49,7 +49,7 @@ export default function UserLayout({
                         </button>
                     </nav>
                 </div>
-                <div className="col-span-4 lg:col-span-3">
+                <div className="col-span-4 lg:col-span-3 px-16">
                     {children}
                 </div>
             </div>

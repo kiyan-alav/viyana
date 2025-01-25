@@ -80,7 +80,7 @@ function Header() {
                     {!false ? (
                         <Link href={MAIN_PATH.register}>ورود / ثبت نام</Link>
                     ) : (
-                        <Link href={USER_PANEL_PATH.dashboard} className="block">
+                        <Link href={USER_PANEL_PATH.detailsAccount} className="block">
                             <User
                                 avatarProps={{
                                     src: "https://i.pravatar.cc/150?u=a04258114e29026702d",
