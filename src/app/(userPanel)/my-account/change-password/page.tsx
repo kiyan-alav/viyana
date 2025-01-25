@@ -25,7 +25,7 @@ function ChangePassword() {
           errorMessage="رمز عبور قدیمی الزامی است"
           label="رمز عبور قدیمی"
           labelPlacement="outside"
-          name="oldPpassword"
+          name="oldPassword"
           type={isVisibleOldPassword ? "text" : "password"}
           endContent={
             <button
@@ -46,7 +46,7 @@ function ChangePassword() {
           errorMessage="رمز عبور جدید"
           label="رمز عبور جدید"
           labelPlacement="outside"
-          name="oldPpassword"
+          name="newPassword"
           type={isVisibleNewPassword ? "text" : "password"}
           endContent={
             <button
