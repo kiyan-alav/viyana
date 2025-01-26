@@ -14,6 +14,7 @@ import {
 import { useDisclosure, User } from "@heroui/react";
 import HorizontalProductCard from "./HorizontalProductCard";
 import { MAIN_PATH, USER_PANEL_PATH } from "@/routes/path";
+import logo from "@/public/images/logo.png"
 
 function Header() {
   const {
@@ -33,11 +34,8 @@ function Header() {
         <div className="flex items-center gap-8">
           <div className="w-24">
             <Image
-              src="/images/logo.png"
+              src={logo}
               alt="logo"
-              layout="responsive"
-              width={96}
-              height={96}
               className="w-full h-full"
             />
           </div>

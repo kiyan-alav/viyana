@@ -19,15 +19,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl" suppressHydrationWarning>
+      <html lang="fa" dir="rtl">
+      <head>
+        <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              document.addEventListener('DOMContentLoaded', () => {
+                document.body.removeAttribute('cz-shortcut-listen');
+              });
+            `,
+            }}
+        />
+      </head>
       <body>
-        <ReduxProvider>
-          <NextProvider>
-            {children}
-            <ToastContainer autoClose={5000} />
-          </NextProvider>
-        </ReduxProvider>
+      <ReduxProvider>
+        <NextProvider>
+          {children}
+          <ToastContainer autoClose={5000}/>
+        </NextProvider>
+      </ReduxProvider>
       </body>
-    </html>
+      </html>
   );
 }
