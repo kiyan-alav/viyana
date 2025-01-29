@@ -13,8 +13,6 @@ function CategoryItem() {
             <Image
               src={TestCategory}
               alt="logo"
-              width={96}
-              height={96}
               className="w-full h-full overflow-hidden"
             />
           </div>

@@ -35,7 +35,7 @@ const rows = [
 function AdminCommentTable() {
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
-    const approveCommentHandler = function (id: string){
+    const approveCommentHandler = function (id: string) {
         Swal.fire({
             title: 'آیا از تایید نظر مورد نظر اطمینان دارید؟',
             icon: 'warning',
@@ -54,7 +54,7 @@ function AdminCommentTable() {
 
     }
 
-    const rejectCommentHandler = function (id: string){
+    const rejectCommentHandler = function (id: string) {
         Swal.fire({
             title: 'آیا از رد نظر مورد نظر اطمینان دارید؟',
             icon: 'warning',
@@ -92,25 +92,27 @@ function AdminCommentTable() {
                             <TableCell>{row.index}</TableCell>
                             <TableCell>{row.sender}</TableCell>
                             <TableCell>{row.date}</TableCell>
-                            <TableCell className="flex items-center gap-4">
-                                <button
-                                    onClick={onOpen}
-                                    className="text-[13px] md:text-sm leading-4 flex items-center cursor-pointer font-semibold text-center justify-center border-0 border-transparent text-blue-600"
-                                >
-                                    <Icon icon="mdi:eye" width="24" height="24"/>
-                                </button>
-                                <button
-                                    onClick={() => approveCommentHandler("11")}
-                                    className="text-[13px] md:text-sm leading-4 flex items-center cursor-pointer font-semibold text-center justify-center border-0 border-transparent text-green-600"
-                                >
-                                    <Icon icon="material-symbols:check-rounded" width="36" height="36" />
-                                </button>
-                                <button
-                                    onClick={() => rejectCommentHandler("11")}
-                                    className="text-[13px] md:text-sm leading-4 flex items-center cursor-pointer font-semibold text-center justify-center border-0 border-transparent text-red-600"
-                                >
-                                    <Icon icon="maki:cross" width="24" height="24" />
-                                </button>
+                            <TableCell>
+                                <div className="flex items-center gap-4">
+                                    <button
+                                        onClick={onOpen}
+                                        className="text-[13px] md:text-sm leading-4 flex items-center cursor-pointer font-semibold text-center justify-center border-0 border-transparent text-blue-600"
+                                    >
+                                        <Icon icon="mdi:eye" width="24" height="24"/>
+                                    </button>
+                                    <button
+                                        onClick={() => approveCommentHandler("11")}
+                                        className="text-[13px] md:text-sm leading-4 flex items-center cursor-pointer font-semibold text-center justify-center border-0 border-transparent text-green-600"
+                                    >
+                                        <Icon icon="material-symbols:check-rounded" width="36" height="36"/>
+                                    </button>
+                                    <button
+                                        onClick={() => rejectCommentHandler("11")}
+                                        className="text-[13px] md:text-sm leading-4 flex items-center cursor-pointer font-semibold text-center justify-center border-0 border-transparent text-red-600"
+                                    >
+                                        <Icon icon="maki:cross" width="24" height="24"/>
+                                    </button>
+                                </div>
                             </TableCell>
                         </TableRow>
                     )}
@@ -123,7 +125,8 @@ function AdminCommentTable() {
                             <ModalHeader className="flex flex-col gap-1">متن پیام</ModalHeader>
                             <ModalBody className="flex flex-col gap-4">
                                 <p className="text-palette-50 text-sm lg:text-base font-medium">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است
                                 </p>
                             </ModalBody>
                             <ModalFooter>

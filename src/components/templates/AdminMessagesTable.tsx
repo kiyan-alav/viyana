@@ -35,7 +35,7 @@ const rows = [
 function AdminMessagesTable() {
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
-    const deleteMessageHandler = function (id: string){
+    const deleteMessageHandler = function (id: string) {
         Swal.fire({
             title: 'آیا میخواهید پیام مورد نظر را از لیست حذف کنید؟',
             icon: 'warning',
@@ -73,19 +73,21 @@ function AdminMessagesTable() {
                             <TableCell>{row.index}</TableCell>
                             <TableCell>{row.sender}</TableCell>
                             <TableCell>{row.date}</TableCell>
-                            <TableCell className="flex items-center gap-4">
-                                <button
-                                    onClick={onOpen}
-                                    className="text-[13px] md:text-sm leading-4 flex items-center cursor-pointer font-semibold text-center justify-center border-0 border-transparent text-blue-600"
-                                >
-                                    <Icon icon="mdi:eye" width="24" height="24"/>
-                                </button>
-                                <button
-                                    onClick={() => deleteMessageHandler("11")}
-                                    className="text-[13px] md:text-sm leading-4 flex items-center cursor-pointer font-semibold text-center justify-center border-0 border-transparent text-red-600"
-                                >
-                                    <Icon icon="mdi:trash" width="24" height="24"/>
-                                </button>
+                            <TableCell>
+                                <div className="flex items-center gap-4">
+                                    <button
+                                        onClick={onOpen}
+                                        className="text-[13px] md:text-sm leading-4 flex items-center cursor-pointer font-semibold text-center justify-center border-0 border-transparent text-blue-600"
+                                    >
+                                        <Icon icon="mdi:eye" width="24" height="24"/>
+                                    </button>
+                                    <button
+                                        onClick={() => deleteMessageHandler("11")}
+                                        className="text-[13px] md:text-sm leading-4 flex items-center cursor-pointer font-semibold text-center justify-center border-0 border-transparent text-red-600"
+                                    >
+                                        <Icon icon="mdi:trash" width="24" height="24"/>
+                                    </button>
+                                </div>
                             </TableCell>
                         </TableRow>
                     )}
@@ -98,7 +100,8 @@ function AdminMessagesTable() {
                             <ModalHeader className="flex flex-col gap-1">متن پیام</ModalHeader>
                             <ModalBody className="flex flex-col gap-4">
                                 <p className="text-palette-50 text-sm lg:text-base font-medium">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است
                                 </p>
                             </ModalBody>
                             <ModalFooter>
