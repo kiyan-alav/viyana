@@ -13,13 +13,6 @@ export default function UserLayout({
     children: React.ReactNode;
 }>) {
     const pathname = usePathname();
-    const router = useRouter();
-
-    useEffect(() => {
-        if (pathname === "/my-account") {
-            router.replace("/my-account/details-account");
-        }
-    }, [pathname, router]);
 
     return (
         <div className="flex flex-col gap-16">
