@@ -6,10 +6,7 @@ function ProductCategory() {
             <h2 className="text-lg md:text-xl xl:text-2xl font-bold text-palette-50">
                 دسته بندی های محصولات
             </h2>
-            <div className="">
-                <div className=""></div>
-                <AdminCategoryTable />
-            </div>
+            <AdminCategoryTable/>
         </div>
     );
 }

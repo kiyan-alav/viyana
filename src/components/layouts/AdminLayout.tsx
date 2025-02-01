@@ -18,7 +18,7 @@ function AdminLayout({
 
 
     return (
-        <div className="flex bg-gray-100 h-screen">
+        <div className="flex bg-gray-100 h-full">
             <div
                 className={`${isOpenSidebar ? "w-64 p-8" : "w-0 p-0 overflow-hidden"}  flex flex-col gap-16 shadow-lg border-l-2 border-l-gray-400/50 transition-all`}>
                 <div className="w-36 self-center">
