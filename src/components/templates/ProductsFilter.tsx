@@ -3,7 +3,7 @@ import React from "react";
 import { Select, SelectItem, Slider, Switch } from "@heroui/react";
 import { usePathname } from "next/navigation";
 
-export const categories = [
+const categories = [
   { key: "1", label: "دسته بندی 1" },
   { key: "2", label: "دسته بندی 2" },
   { key: "3", label: "دسته بندی 3" },

@@ -21,12 +21,12 @@ export const USER_PANEL_PATH = {
 
 export const ADMIN_PANEL_PATH = {
     dashboard: path("/admin", "dashboard"),
-    users: path("/admin", "users"), // list - delete
-    products: path("/admin", "products"), // list - delete
-    productDetail: (id: string) => path("/admin", `products/${id}`), // edit
-    newProduct: (id: string) => path("/admin", `products/new`), // new
-    category: path("/admin", "category"), // list - delete - new - edit
-    comments: path("/admin", "comments"), // list - acc/rej
-    banners: path("/admin", "banners"), // list - delete - new - edit
-    messages: path("/admin", "messages"), // list - delete
+    users: path("/admin", "users"),
+    products: path("/admin", "products"),
+    editProduct: (id: string) => path("/admin", `products/${id}`),
+    newProduct: path("/admin", `products/new`),
+    category: path("/admin", "category"),
+    comments: path("/admin", "comments"),
+    banners: path("/admin", "banners"),
+    messages: path("/admin", "messages"),
 };

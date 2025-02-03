@@ -78,7 +78,7 @@ function AdminCategoryTable() {
                 className="self-start text-[13px] md:text-sm leading-4 flex items-center gap-2 font-semibold justify-center border-2 border-blue-600 px-4 py-2 rounded text-blue-600 hover:text-white hover:bg-blue-600 transition-colors"
             >
                 <Icon icon="mingcute:add-fill" width="20" height="20" />
-                اضافه کردن دسته بندی جدید
+                افزودن دسته بندی جدید
             </button>
             <Table classNames={{
                 wrapper: "shadow-none",
