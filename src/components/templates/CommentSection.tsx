@@ -68,21 +68,14 @@ function CommentSection() {
           labelPlacement="outside"
           name="email"
           type="email"
-          className="col-span-2 md:col-span-1 font-semibold"
-        />
-        <Input
-          label="موضوع"
-          labelPlacement="outside"
-          name="subject"
-          type="text"
-          className="col-span-2 md:col-span-1 font-semibold"
+          className="col-span-2 font-semibold"
         />
         <Button
           type="submit"
           variant="solid"
           className="bg-palette-50 text-white w-1/4 py-4 px-8 font-bold"
         >
-          ارسال پیام
+          ارسال نظر
         </Button>
       </Form>
       <hr />

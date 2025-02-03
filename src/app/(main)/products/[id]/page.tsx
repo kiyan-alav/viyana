@@ -40,11 +40,21 @@ function ProductDetail() {
                   دسته بندی:
                 </span>
                 <Link
-                  href={MAIN_PATH.category("1")}
-                  className="text-palette-100 font-semibold transition hover:underline hover:text-palette-50"
+                    href={MAIN_PATH.category("1")}
+                    className="text-palette-100 font-semibold transition hover:underline hover:text-palette-50"
                 >
                   کودکان
                 </Link>
+              </li>
+              <li>
+                <span className="font-semibold text-palette-50 inline-block ltr:pr-2 rtl:pl-2">
+                  موجودی:
+                </span>
+                <span
+                    className="text-palette-100 font-semibold transition hover:underline hover:text-palette-50"
+                >
+                  10
+                </span>
               </li>
               <li>
                 <span className="font-semibold text-palette-50 inline-block ltr:pr-2 rtl:pl-2">
@@ -59,10 +69,12 @@ function ProductDetail() {
               </li>
             </ul>
           </div>
-          <hr />
+          <hr/>
           <div className="flex items-center gap-8 my-8">
-            <div className="group flex items-center justify-between rounded-md overflow-hidden flex-shrink-0 border h-11 md:h-12 border-gray-300">
-              <button className="flex items-center justify-center flex-shrink-0 h-full transition ease-in-out duration-300 focus:outline-none w-10 md:w-12 text-heading border-e border-gray-300 hover:text-white hover:bg-palette-50">
+            <div
+                className="group flex items-center justify-between rounded-md overflow-hidden flex-shrink-0 border h-11 md:h-12 border-gray-300">
+              <button
+                  className="flex items-center justify-center flex-shrink-0 h-full transition ease-in-out duration-300 focus:outline-none w-10 md:w-12 text-heading border-e border-gray-300 hover:text-white hover:bg-palette-50">
                 <Icon icon="ic:outline-minus" width="24" height="24" />
               </button>
               <span className="font-semibold flex items-center justify-center h-full transition-colors duration-250 ease-in-out cursor-default flex-shrink-0 text-base text-heading w-12 md:w-20 xl:w-24">

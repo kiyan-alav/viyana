@@ -22,7 +22,7 @@ function AdminLayout({
             <div className="flex h-full">
                 <div className="h-full shadow-lg border-l-2 border-l-gray-400/50">
                     <div
-                        className={`${isOpenSidebar ? "w-64 p-8 " : "w-0 p-0 overflow-hidden"}  flex flex-col gap-16 transition-all`}>
+                        className={`${isOpenSidebar ? "w-64 p-8" : "w-0 p-0 overflow-hidden"}  flex flex-col gap-16 transition-all`}>
                         <div className="w-36 self-center">
                             <Image
                                 src={logo}
