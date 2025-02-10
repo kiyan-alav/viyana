@@ -11,4 +11,5 @@ export const TOAST_OPTIONS = {
   theme: "colored",
   draggablePercent: 60,
   width: "auto",
+  rtl: true,
 };

@@ -14,7 +14,7 @@ import {
 import { useDisclosure, User } from "@heroui/react";
 import HorizontalProductCard from "./HorizontalProductCard";
 import { MAIN_PATH, USER_PANEL_PATH } from "@/routes/path";
-import logo from "@/public/images/logo.png"
+import logo from "@/public/images/logo.png";
 
 function Header() {
   const {
@@ -33,11 +33,7 @@ function Header() {
       <div className="bg-white shadow-md py-8 flex items-center justify-around">
         <div className="flex items-center gap-8">
           <div className="w-24">
-            <Image
-              src={logo}
-              alt="logo"
-              className="w-full h-full"
-            />
+            <Image src={logo} alt="logo" className="w-full h-full" />
           </div>
           <div className="hidden md:flex md:items-center md:gap-4">
             <Link
@@ -76,7 +72,7 @@ function Header() {
         </div>
         <div className="flex items-center gap-4">
           {!false ? (
-            <Link href={MAIN_PATH.register}>ورود / ثبت نام</Link>
+            <Link href={MAIN_PATH.auth}>ورود / ثبت نام</Link>
           ) : (
             <Link href={USER_PANEL_PATH.detailsAccount} className="block">
               <User
