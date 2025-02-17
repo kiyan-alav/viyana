@@ -5,8 +5,11 @@ import { FormEvent, useState } from "react";
 import { Form } from "@heroui/react";
 import { useAppDispatch } from "@/redux/hooks";
 import { registerNewUserToServer } from "@/redux/slice/AuthSlice";
+import { MAIN_PATH } from "@/routes/path";
+import { useRouter } from "next/navigation";
 
 function SignUp() {
+  const router = useRouter();
   const dispatch = useAppDispatch();
 
   const [firstName, setFirstName] = useState("");
@@ -19,7 +22,7 @@ function SignUp() {
   const registerHandler = async function (event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    await dispatch(
+    const response = await dispatch(
       registerNewUserToServer({
         firstName,
         lastName,
@@ -27,13 +30,17 @@ function SignUp() {
         email,
         password,
       })
-    );
-    setFirstName("");
-    setLastName("");
-    setMobile("");
-    setEmail("");
-    setPassword("");
-    setRePassword("");
+    ).unwrap();
+
+    if (response.status === 201) {
+      setFirstName("");
+      setLastName("");
+      setMobile("");
+      setEmail("");
+      setPassword("");
+      setRePassword("");
+      router.replace(MAIN_PATH.authEmail);
+    }
   };
 
   return (
