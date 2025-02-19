@@ -33,8 +33,16 @@ export async function POST(req: Request) {
       );
     }
 
-    const accessToken = generateAccessToken({ email, id: existingUser._id });
-    const refreshToken = generateRefreshToken({ email, id: existingUser._id });
+    const accessToken = generateAccessToken({
+      email,
+      id: existingUser._id,
+      role: existingUser.role,
+    });
+    const refreshToken = generateRefreshToken({
+      email,
+      id: existingUser._id,
+      role: existingUser.role,
+    });
 
     await User.findOneAndUpdate(
       { email },

@@ -19,7 +19,7 @@ export const generateAccessToken = (data: Record<string, string>) => {
     { ...data },
     process.env.AccessTokenSecretKey as string,
     {
-      expiresIn: "6d",
+      expiresIn: "60s",
     }
   );
   return token;
@@ -34,4 +34,20 @@ export const generateRefreshToken = (data: Record<string, string>) => {
     }
   );
   return token;
+};
+
+export const verifyAccessToken = function (token: string) {
+  const decodedToken = jsonWebToken.verify(
+    token,
+    process.env.AccessTokenSecretKey as string
+  );
+  return decodedToken;
+};
+
+export const verifyRefreshToken = function (token: string) {
+  const decodedToken = jsonWebToken.verify(
+    token,
+    process.env.RefreshTokenSecretKey as string
+  );
+  return decodedToken;
 };
